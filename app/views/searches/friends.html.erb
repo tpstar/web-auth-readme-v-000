@@ -1,1 +1,6 @@
-
+<h3>Your friends</h3>
+<ul>
+  <% @friends.each do |friend| %>
+    <li><%= "#{friend['firstName']} #{friend['lastName']}" %></li>
+  <% end %>
+</ul>
